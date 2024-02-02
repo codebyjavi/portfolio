@@ -1,0 +1,14 @@
+/* styles.css */
+#descargarCV {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#descargarCV:hover {
+    background-color: #2980b9;
+}
