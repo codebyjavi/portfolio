@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <script src="js/tailwind.config.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Javier González | Developer</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <div class="logo__container">
-            <a href="/index.html"><img src="img/logo.svg" alt="logo"></a>
-        </div>
-        <div class="social-media__header">
-            <a href="https://www.linkedin.com/in/javier-it/" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a>
-            <a href="https://github.com/javierspr" target="_blank"><img src="img/github.svg" alt="github"></a>
-            <a href="https://twitter.com/javier_spr" target="_blank"><img class="x-icon" src="img/x.svg" alt="x"></a>
-        </div>
-        <button id="descargarCV">Descargar CV</button>
-        <button><box-icon name='menu'></box-icon></button>
+  <body class="max-w-[900px] items-center m-auto bg-gradient-to-b from-gray-950 to-gray-800">
+    <header class="max-w-[90%] lg:max-w-[900px] fixed mx-auto top-0 left-0 right-0 py-5 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center">
+        <img class="w-[30px]" src="img/logo.svg" alt="logo"/>
+      </a>
+
+      <div class="hidden sm:flex gap-9 items-center">
+        <a href="https://www.linkedin.com/in/javier-it/" target="_blank">
+            <img src="img/linkedin.svg" alt=""/>
+        </a>
+        <a href="https://github.com/javier-it" target="_blank">
+            <img src="img/github.svg" alt=""/>
+        </a>
+        <a href="#" target="_blank"><img src="img/x.svg" alt=""/></a>
+        <a href="https://www.tiktok.com/@javier..it" target="_blank">
+            <img src="img/tiktok.svg" alt=""/>
+        </a>
+      </div>
+
+      <i class="bx bx-menu sm:block text-white text-xl sm:hidden"></i>
     </header>
-    <section id="home">
-        <div class="primary__container">
-            <h1 class="primary-title"><span>H</span>ey, <span>I</span>'m Javier González</h1>
-            <p>a Full Stack Web Developer.</p>
-            <a href="/#projects" class="primary-button">Projects</a>
-        </div>
-    </section>
-    <section id="about">
-        <p class="info">I'm from Buenos Aires, Argentina.<br> My favorite hobbies are coding, listening to music, and playing video games.</p>
-    </section>
-    <section id="projects">
-    </section>
-    <section id="contact">
+
+    <!-- Hero -->
+    <section class="h-screen mx-auto pt-[5em] flex-col items-center text-center text-6xl">
+      <h1 class="text-white font-bold">Hi, I'm <span class="text-blue-800">Javier González</span></h1>
+      <h2 class="text-white text-xl mt-5">Full Stack Developer from <span class="text-sky-300">Argentina</span>.</h2>
     </section>
 
-    <footer class="footer">
-            <h3>Social Media</h3>
-            <div class="social-media-icons">
-                <a href="https://twitter.com/javier_spr" target="_blank"><img src="img/x.svg" alt="x"></a>
-                <a href="https://www.linkedin.com/in/javier-it/" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a>
-                <a href="https://github.com/javierspr" target="_blank"><img src="img/github.svg" alt="github"></a>
-            </div>
-            <div class="rights">
-                <h3>Made by Javier González</h3>
-            </div>
-    </footer>
+    <!-- Projects -->
+    <section class="h-screen flex-col items-center">
+      <h2 class="text-white bold text-3xl text-center">Projects</h2>
+    </section>
+
+    <!-- Contact -->
+    <section class="h-screen flex-col items-center justify-center">
+      <h2 class="text-white bold text-3xl text-center pt-[1.5em] pb-[1.7em]">Contact</h2>
+
+      <form action="" class="text-white flex flex-col max-w-[30em] mx-auto p-5">
+        <label for="name" class="text-xl text-neutral-200 mb-3">Name</label>
+        <input placeholder="Enter Your Name" type="text" id="name" class="h-9 rounded ps-5 text-[#0a0a0a] mb-12"/>
+
+        <label for="email" class="text-xl text-neutral-200 mb-3">Email</label>
+        <input placeholder="Enter Your Email" type="text" id="email" class="h-9 rounded ps-5 text-[#0a0a0a] mb-12"/>
+
+        <label for="message" id class="text-xl text-neutral-200 mb-3">Message</label>
+        <textarea class="ps-5 pt-4 rounded text-[#0a0a0a] mb-12" placeholder="Enter Your Email" name="" id="message" cols="30" rows="5"></textarea>
+        <button class="p-5 bg-blue-800 rounded shadow-lg">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 mb-10 flex flex-col items-center">
+        <h3 class="text-white text-xl">Created by Javier Gonzalez</h3>
+        <h3 class="text-white text-lg mt-3">All rights reserved. 2024</h3>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
