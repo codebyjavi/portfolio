@@ -8,3 +8,8 @@ document.getElementById('descargarCV').addEventListener('click', function() {
     link.click();
     document.body.removeChild(link);
 });
+
+
+
+
+// <script>document.write(new Date().getFullYear())</script> FOOTER

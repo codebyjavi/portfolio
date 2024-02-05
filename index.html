@@ -11,13 +11,14 @@
   </head>
 
   <body class="max-w-[900px] items-center m-auto bg-gradient-to-b from-gray-950 to-gray-800">
-    <header class="max-w-[90%] lg:max-w-[900px] fixed mx-auto top-0 left-0 right-0 py-5 flex items-center justify-between">
-      
+    
+    <header class="lg:max-w-[400px] bg-neutral-900/80 hover:bg-neutral-900/50 hover:scale-105 mx-auto fixed bottom-0 left-0 right-0 gap-9 p-5 flex items-center justify-between md:justify-center md:rounded-3xl">
+  
       <a href="index.html" class="flex items-center">
         <img class="w-[30px]" src="img/logo.svg" alt="logo"/>
       </a>
 
-      <div class="hidden sm:flex gap-9 items-center">
+      <div class="hidden md:flex gap-9 items-center">
         <a href="https://www.linkedin.com/in/javier-it/" target="_blank">
             <img src="img/linkedin.svg" alt=""/>
         </a>
@@ -30,23 +31,42 @@
         </a>
       </div>
 
-      <i class="bx bx-menu sm:block text-white text-xl sm:hidden"></i>
+      <i class="bx bx-menu md:block text-white text-xl md:hidden"></i>
     </header>
 
     <!-- Hero -->
-    <section class="h-screen mx-auto pt-[5em] flex-col items-center text-center text-6xl">
-      <h1 class="text-white font-bold">Hi, I'm <span class="text-blue-800">Javier González</span></h1>
+    
+
+    <section class="flex-col mt-[15vh] md:mt-[40vh] mb-[30vh] md:mb-[40vh] items-center text-center text-7xl">
+      <h1 class="text-white font-bold">Hi, I'm <span class="text-yellow-600">Javier González</span></h1>
       <h2 class="text-white text-xl mt-5">Full Stack Developer from <span class="text-sky-300">Argentina</span>.</h2>
+      <i class='bx bx-down-arrow-alt w-8 h-8 flex m-auto my-start'></i>
+    
+    <div class="flex flex-wrap gap-5 text-xl text-white font-mono items-center justify-center">
+        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">HTML</div>
+        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">CSS</div>
+        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">JavaScript</div>
+        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">Tailwind</div>
+        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">Git, Github</div>
+        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">React</div>
+      </div>
     </section>
 
     <!-- Projects -->
-    <section class="h-screen flex-col items-center">
-      <h2 class="text-white bold text-3xl text-center">Projects</h2>
+    <section class="flex flex-col items-center justify-center my-[5em] md:my-[10em]">
+      <h2 class="text-yellow-600 font-bold text-4xl text-center mb-24">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 h-[90em] md:h-[70em] w-11/12 ">
+        <div class="bg-neutral-100/20">asd</div>
+        <div class="bg-neutral-100/20">asd</div>
+        <div class="bg-neutral-100/20">asd</div>
+        <div class="bg-neutral-100/20">asd</div>
+      </div>
     </section>
+    
 
     <!-- Contact -->
-    <section class="h-screen flex-col items-center justify-center">
-      <h2 class="text-white bold text-3xl text-center pt-[1.5em] pb-[1.7em]">Contact</h2>
+    <section class="flex-col items-center justify-center my-[5em] md:my-[10em]">
+      <h2 class="text-yellow-600 font-bold text-4xl text-center pb-[1em">Contact</h2>
 
       <form action="" class="text-white flex flex-col max-w-[30em] mx-auto p-5">
         <label for="name" class="text-xl text-neutral-200 mb-3">Name</label>
@@ -56,15 +76,17 @@
         <input placeholder="Enter Your Email" type="text" id="email" class="h-9 rounded ps-5 text-[#0a0a0a] mb-12"/>
 
         <label for="message" id class="text-xl text-neutral-200 mb-3">Message</label>
-        <textarea class="ps-5 pt-4 rounded text-[#0a0a0a] mb-12" placeholder="Enter Your Email" name="" id="message" cols="30" rows="5"></textarea>
-        <button class="p-5 bg-blue-800 rounded shadow-lg">Submit</button>
+        <textarea class="p-4 rounded text-[#0a0a0a] mb-12" placeholder="Enter Your Message" name="" id="message" cols="30" rows="5"></textarea>
+        <button class="p-5 mt-5 bg-blue-800 hover:bg-blue-700 rounded shadow-lg" href="#">Submit</button>
       </form>
     </section>
 
     <!-- Footer -->
-    <footer class="p-5 mb-10 flex flex-col items-center">
-        <h3 class="text-white text-xl">Created by Javier Gonzalez</h3>
-        <h3 class="text-white text-lg mt-3">All rights reserved. 2024</h3>
+    <footer class="bg-neutral-900/70 rounded-3xl max-w-[30em] mx-auto p-5 mb-10 flex flex-col items-center mb-[10em]">
+        <h3 class="text-white text-xl">Made by Javier Gonzalez</h3>
+        <h3 class="text-white text-lg mt-3">© Copyright 2024. All rights reserved</h3>
     <script src="js/script.js"></script>
+
   </body>
-</html>
+
+  </html>
