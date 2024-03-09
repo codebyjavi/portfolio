@@ -1,15 +1,29 @@
-// script.js
-document.getElementById('descargarCV').addEventListener('click', function() {
-    // Simular un enlace de descarga
-    let link = document.createElement('a');
-    link.href = 'cv-javier-gonzalez.pdf';
-    link.download = 'cv-javier-gonzalez.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
+const copyButton = document.getElementById('copy-btn');
+const userOutput = document.getElementById('userOutput');
+const tooltip = document.querySelector('.tooltip');
 
+copyButton.addEventListener('click', copyPassword);
+copyButton.addEventListener('focusout', resetTooltip);
 
+function copyPassword() {
+    userOutput.select();
+    navigator.clipboard.writeText(userOutput.value);
+    window.getSelection().removeAllRanges();
 
+    tooltip.textContent = 'Copied!';
+    tooltip.parentElement.classList.add('tooltip-active');
 
-// <script>document.write(new Date().getFullYear())</script> FOOTER
+    setTimeout(() => {
+        resetTooltip();
+    }, 1000);
+}
+
+function resetTooltip() {
+    tooltip.parentElement.classList.remove('tooltip-active');
+
+    // Esperar al final de la transición antes de restablecer el texto
+    tooltip.addEventListener('transitionend', function transitionEnd() {
+        tooltip.removeEventListener('transitionend', transitionEnd);
+        tooltip.textContent = 'Copy';
+    });
+}

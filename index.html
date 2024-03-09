@@ -4,89 +4,172 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
-    <script src="js/tailwind.config.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1eccab0fde.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
     <title>Javier González | Developer</title>
   </head>
 
-  <body class="max-w-[900px] items-center m-auto bg-gradient-to-b from-gray-950 to-gray-800">
+  <body class="max-w-[800px] mx-3 items-center md:m-auto bg-gradient-to-b from-gray-950 to-indigo-950">
     
-    <header class="lg:max-w-[400px] bg-neutral-900/80 hover:bg-neutral-900/50 hover:scale-105 mx-auto fixed bottom-0 left-0 right-0 gap-9 p-5 flex items-center justify-between md:justify-center md:rounded-3xl">
-  
-      <a href="index.html" class="flex items-center">
-        <img class="w-[30px]" src="img/logo.svg" alt="logo"/>
-      </a>
-
-      <div class="hidden md:flex gap-9 items-center">
-        <a href="https://www.linkedin.com/in/javier-it/" target="_blank">
-            <img src="img/linkedin.svg" alt=""/>
-        </a>
-        <a href="https://github.com/javier-it" target="_blank">
-            <img src="img/github.svg" alt=""/>
-        </a>
-        <a href="#" target="_blank"><img src="img/x.svg" alt=""/></a>
-        <a href="https://www.tiktok.com/@javier..it" target="_blank">
-            <img src="img/tiktok.svg" alt=""/>
-        </a>
-      </div>
-
-      <i class="bx bx-menu md:block text-white text-xl md:hidden"></i>
+    <!-- Header -->
+    <header class="flex justify-end pt-2">
+      <i class='bx bxs-sun p-3 text-neutral-200 text-4xl cursor-pointer'></i>
+      <!-- <i class='bx bxs-moon' ></i> -->
     </header>
 
     <!-- Hero -->
-    
-
-    <section class="flex-col mt-[15vh] md:mt-[40vh] mb-[30vh] md:mb-[40vh] items-center text-center text-7xl">
-      <h1 class="text-white font-bold">Hi, I'm <span class="text-yellow-600">Javier González</span></h1>
-      <h2 class="text-white text-xl mt-5">Full Stack Developer from <span class="text-sky-300">Argentina</span>.</h2>
-      <i class='bx bx-down-arrow-alt w-8 h-8 flex m-auto my-start'></i>
-    
-    <div class="flex flex-wrap gap-5 text-xl text-white font-mono items-center justify-center">
-        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">HTML</div>
-        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">CSS</div>
-        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">JavaScript</div>
-        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">Tailwind</div>
-        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">Git, Github</div>
-        <div class="px-4 py-2 bg-neutral-900/70 rounded-full">React</div>
+    <article class=" mb-10 md:mb-20 md:pt-6">
+      <div class="items-center text-center md:text-start md:flex md:gap-4">
+        <img class="mb-4 md:mb-0 mx-auto md:mx-0 w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-neutral-200" src="img/personal-photo.jpeg" alt="Foto de Javier">
+        <div>
+          <h1 class="text-yellow-600 font-bold text-2xl md:text-4xl md:pb-2">Javier González</h1>
+          <h2 class="text-stone-300 font-semibold text-md pt-1">Analista de sistemas y full stack developer de <span class="text-sky-300">Argentina</span>.</h2>
+        </div>
       </div>
-    </section>
+    </article>
 
-    <!-- Projects -->
-    <section class="flex flex-col items-center justify-center my-[5em] md:my-[10em]">
-      <h2 class="text-yellow-600 font-bold text-4xl text-center mb-24">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 h-[90em] md:h-[70em] w-11/12 ">
-        <div class="bg-neutral-100/20">asd</div>
-        <div class="bg-neutral-100/20">asd</div>
-        <div class="bg-neutral-100/20">asd</div>
-        <div class="bg-neutral-100/20">asd</div>
+  <!-- Proyectos -->
+    <article class="mb-10 md:mb-20">
+      <h2 class="text-yellow-600 font-bold text-2xl md:text-4xl mb-5">Proyectos <i class="fa-solid fa-code"></i></h2>
+      <div class="flex flex-col gap-20">
+        
+        <div class="grid md:grid-cols-2 gap-4 text-white">
+          <img class="rounded-lg" src="img/ecommerce.png" alt="">
+          
+          <div class="flex flex-col justify-between gap-3 md:gap-0 md:py-1">
+            <p class="text-xl font-bold">Ecommerce 'E-Lorem'</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, illum.</p>
+            <div class="flex gap-2">
+              <i class="fa-brands fa-html5 text-[#f06529] text-md md:text-lg"></i>
+              <i class="fa-brands fa-css3-alt text-[#264de4] text-md md:text-lg"></i>
+              <i class="fa-brands fa-js text-[#f0db4f] text-md md:text-lg"></i>
+            </div>
+            <div class="flex gap-2">
+              <a class="text-[#141414] hover:scale-[1.02] font-bold py-1 px-3 my-auto bg-[#dadada] rounded-lg" href="https://github.com/javier-it/proyecto-CODO" target="_blank">
+                <span class="text-md md:text-lg">Github</span>  
+                <i class="fa-brands fa-github text-md md:text-lg"></i>
+              </a>
+              <a class="text-[#141414] hover:scale-[1.02] font-bold py-1 px-3 my-auto bg-[#dadada] rounded-lg" href="https://ecommerceteam.netlify.app/" target="_blank">
+                <span class="text-md md:text-lg">Live</span>  
+                <i class='bx bx-rocket text-md md:text-lg'></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 text-white">
+          <img class="rounded-lg" src="img/ecommerce.png" alt="">
+          
+          <div class="flex flex-col justify-between gap-3 md:gap-0 md:py-1">
+            <p class="text-xl font-bold">Ecommerce 'E-Lorem'</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, illum.</p>
+            <div class="flex gap-2">
+              <i class="fa-brands fa-html5 text-[#f06529] text-md md:text-lg"></i>
+              <i class="fa-brands fa-css3-alt text-[#264de4] text-md md:text-lg"></i>
+              <i class="fa-brands fa-js text-[#f0db4f] text-md md:text-lg"></i>
+            </div>
+            <div class="flex gap-2">
+              <a class="text-[#141414] hover:scale-[1.02] font-bold py-1 px-3 my-auto bg-[#dadada] rounded-lg" href="https://github.com/javier-it/proyecto-CODO" target="_blank">
+                <span class="text-md md:text-lg">Github</span>  
+                <i class="fa-brands fa-github text-md md:text-lg"></i>
+              </a>
+              <a class="text-[#141414] hover:scale-[1.02] font-bold py-1 px-3 my-auto bg-[#dadada] rounded-lg" href="https://ecommerceteam.netlify.app/" target="_blank">
+                <span class="text-md md:text-lg">Live</span>  
+                <i class='bx bx-rocket text-md md:text-lg'></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 text-white">
+          <img class="rounded-lg" src="img/ecommerce.png" alt="">
+          
+          <div class="flex flex-col justify-between gap-3 md:gap-0 md:py-1">
+            <p class="text-xl font-bold">Ecommerce 'E-Lorem'</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, illum.</p>
+            <div class="flex gap-2">
+              <i class="fa-brands fa-html5 text-[#f06529] text-md md:text-lg"></i>
+              <i class="fa-brands fa-css3-alt text-[#264de4] text-md md:text-lg"></i>
+              <i class="fa-brands fa-js text-[#f0db4f] text-md md:text-lg"></i>
+            </div>
+            <div class="flex gap-2">
+              <a class="text-[#141414] hover:scale-[1.02] font-bold py-1 px-3 my-auto bg-[#dadada] rounded-lg" href="https://github.com/javier-it/proyecto-CODO" target="_blank">
+                <span class="text-md md:text-lg">Github</span>  
+                <i class="fa-brands fa-github text-md md:text-lg"></i>
+              </a>
+              <a class="text-[#141414] hover:scale-[1.02] font-bold py-1 px-3 my-auto bg-[#dadada] rounded-lg" href="https://ecommerceteam.netlify.app/" target="_blank">
+                <span class="text-md md:text-lg">Live</span>  
+                <i class='bx bx-rocket text-md md:text-lg'></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 text-white">
+          <img class="rounded-lg" src="img/ecommerce.png" alt="">
+          
+          <div class="flex flex-col justify-between gap-3 md:gap-0 md:py-1">
+            <p class="text-xl font-bold">Ecommerce 'E-Lorem'</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, illum.</p>
+            <div class="flex gap-2">
+              <i class="fa-brands fa-html5 text-[#f06529] text-md md:text-lg"></i>
+              <i class="fa-brands fa-css3-alt text-[#264de4] text-md md:text-lg"></i>
+              <i class="fa-brands fa-js text-[#f0db4f] text-md md:text-lg"></i>
+            </div>
+            <div class="flex gap-2">
+              <a class="text-[#141414] hover:scale-[1.02] font-bold py-1 px-3 my-auto bg-[#dadada] rounded-lg" href="https://github.com/javier-it/proyecto-CODO" target="_blank">
+                <span class="text-md md:text-lg">Github</span>  
+                <i class="fa-brands fa-github text-md md:text-lg"></i>
+              </a>
+              <a class="text-[#141414] hover:scale-[1.02] font-bold py-1 px-3 my-auto bg-[#dadada] rounded-lg" href="https://ecommerceteam.netlify.app/" target="_blank">
+                <span class="text-md md:text-lg">Live</span>  
+                <i class='bx bx-rocket text-md md:text-lg'></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      
       </div>
-    </section>
+    </article>
     
 
-    <!-- Contact -->
-    <section class="flex-col items-center justify-center my-[5em] md:my-[10em]">
-      <h2 class="text-yellow-600 font-bold text-4xl text-center pb-[1em">Contact</h2>
+    <!-- Social -->
+    <section class="flex-col items-center mb-10 md:mb-20">
+      
+      <h2 class="text-yellow-600 font-bold text-2xl md:text-4xl mb-5">Social <i class="fa-solid fa-at"></i></h2>
+      
+      <div class="flex items-center gap-2 md:gap-5 mt-5 text-lg md:text-xl flex-wrap">
+        <a class="text-[#1a899b] hover:scale-[1.02] font-bold py-3 px-5 border-2 border-neutral-600 hover:border-neutral-400 rounded-lg" href="https://www.linkedin.com/in/javier-it/" target="_blank">
+          <i class="fa-brands fa-linkedin "></i>
+          <span class="text-lg md:text-xl">Linkedin</span>
+        </a>
+        <a class="text-[#e3e5e0] hover:scale-[1.02] font-bold py-3 px-5 border-2 border-neutral-600 hover:border-neutral-400 rounded-lg" href="https://github.com/javier-it" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          <span class="text-lg md:text-xl">Github</span>
+        </a>
+        <a class="text-[#8522b2] hover:scale-[1.02] font-bold py-3 px-5 border-2 border-neutral-600 hover:border-neutral-400 rounded-lg" href="https://www.tiktok.com/@javier..it" target="_blank">
+          <i class="fa-brands fa-tiktok"></i>
+          <span class="text-lg md:text-xl"->TikTok</span>
+        </a>
+      </div>
 
-      <form action="" class="text-white flex flex-col max-w-[30em] mx-auto p-5">
-        <label for="name" class="text-xl text-neutral-200 mb-3">Name</label>
-        <input placeholder="Enter Your Name" type="text" id="name" class="h-9 rounded ps-5 text-[#0a0a0a] mb-12"/>
-
-        <label for="email" class="text-xl text-neutral-200 mb-3">Email</label>
-        <input placeholder="Enter Your Email" type="text" id="email" class="h-9 rounded ps-5 text-[#0a0a0a] mb-12"/>
-
-        <label for="message" id class="text-xl text-neutral-200 mb-3">Message</label>
-        <textarea class="p-4 rounded text-[#0a0a0a] mb-12" placeholder="Enter Your Message" name="" id="message" cols="30" rows="5"></textarea>
-        <button class="p-5 mt-5 bg-blue-800 hover:bg-blue-700 rounded shadow-lg" href="#">Submit</button>
-      </form>
     </section>
-
+    
     <!-- Footer -->
-    <footer class="bg-neutral-900/70 rounded-3xl max-w-[30em] mx-auto p-5 mb-10 flex flex-col items-center mb-[10em]">
-        <h3 class="text-white text-xl">Made by Javier Gonzalez</h3>
-        <h3 class="text-white text-lg mt-3">© Copyright 2024. All rights reserved</h3>
-    <script src="js/script.js"></script>
+    <footer class="text-yellow-600 mb-10 md:mb-32">
+      <h3 class="text-2xl md:text-4xl font-bold">Email <i class="fa-solid fa-envelope mb-5"></i></h3>
+      <div class="flex gap-2">
+        <input class="text-neutral-300 text-lg md:text-2xl w-full py-1 ps-4 rounded-md font-semibold" value="Javierbk9@gmail.com" type="text" name="" id="userOutput" disabled>
+        <div class="flex gap-2">
+          <i class="fa-solid fa-copy cursor-pointer text-xl md:text-2xl py-1 px-3 md:px-4 border-2 border-neutral-800 hover:border-neutral-400 rounded-md mini-wrapper" id="copy-btn"><span class="tooltip">Copy</span></i>
+          <a href="mailto:javierbk9@gmail.com" target="_blank"><i class="fa-solid fa-paper-plane cursor-pointer text-xl md:text-2xl py-1 px-3 md:px-4 border-2 border-neutral-800 hover:border-neutral-400 rounded-md mini-wrapper"><span class="tooltip">Send me a message</span></i></a>
+        </div>
+      </div>
+    </footer>
 
+		<script src="js/script.js"></script>
   </body>
 
   </html>
