@@ -1,3 +1,4 @@
+/*Tooltip*/
 
 .mini-wrapper {
     position: relative;
@@ -40,33 +41,4 @@
 
 .mini-wrapper.tooltip-active .tooltip {
     transform: translateX(-50%) scaleY(1);
-}
-
-.mouse-scroll{
-    border: solid 2px #ca8a04;
-    border-radius: 30px;
-    position: relative;
-}
-
-.mouse-scroll::before {
-    content: "";
-    width: 0.4rem;
-    height: 0.4rem;
-    border-radius: 50%;
-    background-color: #dddddd;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: scroll 2s infinite;
-}
-
-@keyframes scroll {
-    0% {
-        bottom: 80%;
-        opacity: 1;
-    }
-    100% {
-        bottom: 20%;
-        opacity: 0;
-    }
 }

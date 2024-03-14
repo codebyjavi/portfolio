@@ -1,9 +1,21 @@
+// const themeButton = document.getElementById('theme-Btn');
 const copyButton = document.getElementById('copy-btn');
 const userOutput = document.getElementById('userOutput');
 const tooltip = document.querySelector('.tooltip');
 
+// themeButton.addEventListener('click', changeTheme)
 copyButton.addEventListener('click', copyPassword);
 copyButton.addEventListener('focusout', resetTooltip);
+
+// function changeTheme() {
+//     document.documentElement.classList.toggle('dark')
+//     if (document.documentElement.classList.contains('dark')) {
+//         themeButton.innerHTML = `<i class='bx bxs-sun p-3 text-neutral-200 text-4xl cursor-pointer'></i>`
+//     }
+//     else {
+//         themeButton.innerHTML = `<i class='bx bx-moon p-3 text-neutral-200 text-4xl cursor-pointer'></i>`
+//     }
+// }
 
 function copyPassword() {
     userOutput.select();
@@ -27,3 +39,6 @@ function resetTooltip() {
         tooltip.textContent = 'Copy';
     });
 }
+
+
+

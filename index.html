@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head class="dark">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- icons -->
     <script src="https://kit.fontawesome.com/1eccab0fde.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
     <link rel="stylesheet" href="styles.css">
     <title>Javier González | Developer</title>
   </head>
 
-  <body class="max-w-[800px] mx-3 items-center md:m-auto bg-[#171717]">
+  <body class="max-w-[800px] mx-3 items-center md:m-auto bg-slate-900">
     
     <!-- Header -->
-    <header class="flex justify-end pt-2">
-      <i class='bx bxs-sun p-3 text-neutral-200 text-4xl cursor-pointer'></i>
-      <!-- <i class='bx bxs-moon' ></i> -->
-    </header>
+    <!-- <header class="flex justify-end pt-2">
+      <button id="theme-Btn"><i class='bx bxs-sun p-3 text-neutral-200 text-4xl cursor-pointer'></i></button>
+    </header> -->
 
     <!-- Hero -->
-    <article class=" mb-10 md:mb-20 md:pt-6">
+    <article class=" mb-10 md:mb-20 md:pt-20">
       <div class="items-center text-center md:text-start md:flex md:gap-4">
         <img class="mb-4 md:mb-0 mx-auto md:mx-0 w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-neutral-200" src="img/personal-photo.jpeg" alt="Foto de Javier" loading="lazy">
         <div>
-          <h1 class="text-[#fb6f92] font-bold text-2xl md:text-4xl md:pb-2">Javier González</h1>
+          <h1 class="text-[#fca311] font-bold text-3xl md:text-5xl md:pb-2">Javier González</h1>
           <h2 class="text-stone-300 font-semibold text-md pt-1">Analista de sistemas y full stack developer de <span class="text-sky-300">Argentina</span>.</h2>
         </div>
       </div>
@@ -32,12 +34,13 @@
 
   <!-- Proyectos -->
     <article class="mb-10 md:mb-20">
-      <h2 class="text-[#fb6f92]  font-bold text-2xl md:text-4xl mb-5">Proyectos <i class="fa-solid fa-code"></i></h2>
+      <h2 class="text-[#fca311]  font-bold text-2xl md:text-4xl mb-5">Proyectos <i class="fa-solid fa-code"></i></h2>
       <div class="flex flex-col gap-20 mb-20">
         
         <div class="grid md:grid-cols-2 gap-4 text-white">
-          <img class="rounded-lg" src="img/ecommerce.png" alt="imagen del ecommerce"  loading="lazy">
-          
+          <a href="https://ecommerceteam.netlify.app/" target="_blank">
+            <img class="rounded-lg opacity-90" src="img/ecommerce.png" alt="imagen del ecommerce"  loading="lazy">
+          </a>
           <div class="flex flex-col justify-between gap-3 md:gap-0 md:py-1">
             <p class="text-neutral-100 text-2xl md:text-3xl font-bold">Ecommerce</p>
             <p class="text-neutral-200">Obtiene los productos de una API, posee distintas secciones y su carrito de compras.</p>
@@ -63,8 +66,9 @@
 
       <div class="grid md:grid-cols-2 gap-4">
         
-        <a href="https://weather-app-javi.netlify.app/" target="_blank" class="flex flex-col gap-1 py-2 px-6 border-neutral-600 border-2 rounded-lg hover:border-neutral-400 hover:scale-[1.02]">
-          <h3 class="text-neutral-100 font-bold">Weather App</h3>
+        <a href="https://weather-app-javi.netlify.app/" target="_blank" class="flex flex-col relative gap-1 py-2 px-6 border-neutral-600 border-2 rounded-lg hover:border-neutral-400 hover:scale-[1.02]">
+          <h3 class="text-neutral-100 text-xl font-bold">Weather app</h3>
+          <i class="fa-solid fa-up-right-from-square text-neutral-200 absolute right-0 me-2"></i>
           <small class="text-neutral-300">Consulta una API y muestra el clima en tiempo real.</small>
           <div class="flex gap-2">
               <i class="fa-brands fa-html5 text-[#FF8A00] text-md md:text-lg"></i>
@@ -73,8 +77,9 @@
           </div>
         </a>
 
-        <a href="https://tasks-app-javi.netlify.app/" target="_blank" class="flex flex-col gap-1 py-2 px-6 border-neutral-600 border-2 rounded-lg hover:border-neutral-400 hover:scale-[1.02]">
-          <h3 class="text-neutral-100 font-bold">Tasks App</h3>
+        <a href="https://tasks-app-javi.netlify.app/" target="_blank" class="flex flex-col relative gap-1 py-2 px-6 border-neutral-600 border-2 rounded-lg hover:border-neutral-400 hover:scale-[1.02]">
+          <h3 class="text-neutral-100 text-xl font-bold">Tasks app</h3>
+          <i class="fa-solid fa-up-right-from-square text-neutral-200 absolute right-0 me-2"></i>
           <small class="text-neutral-300">Permite cargar, tachar y eliminar tareas.</small>
           <div class="flex gap-2">
               <i class="fa-brands fa-html5 text-[#FF8A00] text-md md:text-lg"></i>
@@ -90,7 +95,7 @@
     <!-- Social -->
     <section class="flex-col items-center mb-10 md:mb-20">
       
-      <h2 class="text-[#fb6f92]  font-bold text-2xl md:text-4xl mb-5">Social <i class="fa-solid fa-at"></i></h2>
+      <h2 class="text-[#fca311]  font-bold text-2xl md:text-4xl mb-5">Redes <i class="fa-solid fa-at"></i></h2>
       
       <div class="flex items-center gap-2 md:gap-5 mt-5 text-lg md:text-xl flex-wrap">
         <a class="text-sky-600 hover:scale-[1.02] font-bold py-3 px-5 border-2 border-neutral-600 hover:border-neutral-400 rounded-lg" href="https://www.linkedin.com/in/javier-it/" target="_blank">
@@ -110,7 +115,7 @@
     </section>
     
     <!-- Footer -->
-    <footer class="text-[#fb6f92] mb-10 md:mb-32">
+    <footer class="text-[#fca311] mb-10 md:mb-32">
       <h3 class="text-2xl md:text-4xl font-bold">Email <i class="fa-solid fa-envelope mb-5"></i></h3>
       <div class="flex gap-2">
         <input class="text-neutral-300 text-lg md:text-2xl w-full py-1 ps-4 rounded-md font-semibold" value="Javierbk9@gmail.com" type="text" name="" id="userOutput" disabled>
