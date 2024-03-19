@@ -13,8 +13,8 @@ const DownloadPDFButton = () => {
   };
 
   return (
-    <button className="text-white px-3 py-1 bg-yellow-400/90 rounded-md" onClick={downloadPDF}>
-        Resume - CV
+    <button className="text-black font-semibold px-3 py-1 bg-yellow-400/90 hover:bg-yellow-300 rounded-md" onClick={downloadPDF}>
+        Descargar CV
     </button>
   );
 };

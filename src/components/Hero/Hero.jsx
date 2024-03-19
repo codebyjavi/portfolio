@@ -1,6 +1,6 @@
 import React from 'react'
 import profilePhoto from "../../images/personal-photo.jpeg"
-import DownloadPDFButton from './Resume/Resume';
+import DownloadPDFButton from './Curriculum/Curriculum';
 
 function Hero() {
   return (
