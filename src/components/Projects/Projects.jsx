@@ -19,7 +19,7 @@ function Proyectos() {
           iClassName2="fa-brands fa-react text-[#64C7FF] text-lg md:text-2xl"
           iClassName3="fa-brands fa-js text-[#FFD747] text-lg md:text-2xl"
           h3="Venta de guitarras"
-          paragraph="Obtiene los productos de un array local, posee carrito de compras y utiliza el poder de react de reutilizar componentes."
+          paragraph="Obtiene los productos de un array local y posee carrito de compras."
         />
 
         <LargeProjectCard
@@ -30,7 +30,7 @@ function Proyectos() {
           iClassName2="fa-brands fa-react text-[#64C7FF] text-lg md:text-2xl"
           iClassName3="fa-brands fa-js text-[#FFD747] text-lg md:text-2xl"
           h3="Ecommerce con React"
-          paragraph="Obtiene los productos de una API, posee distintas secciones y su carrito de compras."
+          paragraph="Obtiene los productos de una API, posee distintas secciones y carrito de compras."
         />
 
         <LargeProjectCard
@@ -41,7 +41,7 @@ function Proyectos() {
           iClassName2="fa-brands fa-css3-alt text-blue-500 text-lg md:text-2xl"
           iClassName3="fa-brands fa-js text-[#FFD747] text-lg md:text-2xl"
           h3="Ecommerce con JavaScript"
-          paragraph="Obtiene los productos de una API, posee distintas secciones y su carrito de compras."
+          paragraph="Obtiene los productos de una API, posee distintas secciones y carrito de compras."
           />
 
       </div>
