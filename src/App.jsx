@@ -7,7 +7,7 @@ import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className={`bg-white dark:bg-slate-800 min-h-screen`}>
+    <div className={`bg-white dark:bg-slate-900 min-h-screen`}>
       <div className={`w-full max-w-[800px] mx-auto`}>
         <Header/>
         <Hero/>

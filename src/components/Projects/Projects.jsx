@@ -12,34 +12,34 @@ function Proyectos() {
       <div className="flex flex-col gap-20 mb-20">
     
         <LargeProjectCard
-          live="https://guitar-react-javi.netlify.app/"
-          repo="https://github.com/javxdev/guitar-react"
-          srcImg={guitarLA}
-          iClassName1="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-2xl"
-          iClassName2="fa-brands fa-react text-[#64C7FF] text-lg md:text-2xl"
-          iClassName3="fa-brands fa-js text-[#FFD747] text-lg md:text-2xl"
-          h3="Venta de guitarras"
-          paragraph="Obtiene los productos de un array local y posee carrito de compras."
-        />
-
-        <LargeProjectCard
           live="https://ecommerce-react-javxdev.netlify.app/"
           repo="https://github.com/javxdev/ecommerce-react"
           srcImg={reactEcommerce}
-          iClassName1="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-2xl"
-          iClassName2="fa-brands fa-react text-[#64C7FF] text-lg md:text-2xl"
-          iClassName3="fa-brands fa-js text-[#FFD747] text-lg md:text-2xl"
-          h3="Ecommerce con React"
-          paragraph="Obtiene los productos de una API, posee distintas secciones y carrito de compras."
+          iClassName1="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
+          iClassName2="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
+          iClassName3="fa-brands fa-js text-[#FFD747] text-lg md:text-xl"
+          h3="Ecommerce"
+          paragraph="Obtiene los productos de una API, posee distintas secciones, local storage, custom hooks, carrito de compras y más!"
         />
 
+        <LargeProjectCard
+          live="https://guitar-react-javi.netlify.app/"
+          repo="https://github.com/javxdev/guitar-react"
+          srcImg={guitarLA}
+          iClassName1="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
+          iClassName2="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
+          iClassName3="fa-brands fa-js text-[#FFD747] text-lg md:text-xl"
+          h3="GuitarLA"
+          paragraph="Obtiene los productos de un array local, posee local storage, carrito de compras y más!"
+        />
+        
         <LargeProjectCard
           live="https://ecommerceteam.netlify.app/"
           repo="https://github.com/javier-it/proyecto-CODO"
           srcImg={ecommercePhoto}
-          iClassName1="fa-brands fa-html5 text-[#FF8A00] text-lg md:text-2xl"
-          iClassName2="fa-brands fa-css3-alt text-blue-500 text-lg md:text-2xl"
-          iClassName3="fa-brands fa-js text-[#FFD747] text-lg md:text-2xl"
+          iClassName1="fa-brands fa-html5 text-[#FF8A00] text-lg md:text-xl"
+          iClassName2="fa-brands fa-css3-alt text-blue-500 text-lg md:text-xl"
+          iClassName3="fa-brands fa-js text-[#FFD747] text-lg md:text-xl"
           h3="Ecommerce con JavaScript"
           paragraph="Obtiene los productos de una API, posee distintas secciones y carrito de compras."
           />
