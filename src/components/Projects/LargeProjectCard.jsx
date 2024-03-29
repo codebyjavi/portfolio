@@ -1,6 +1,6 @@
 import React from 'react'
 
-function LargeProjectCard({live, repo, srcImg, iClassName1, iClassName2, iClassName3, h3, paragraph}){
+function LargeProjectCard({live, repo, srcImg, icon1, icon2, icon3, h3, paragraph}){
 
   return (
     <div className="grid md:grid-cols-2 gap-4 text-white">
@@ -11,9 +11,9 @@ function LargeProjectCard({live, repo, srcImg, iClassName1, iClassName2, iClassN
             <h3 className="text-black dark:text-neutral-200 text-xl md:text-3xl font-bold">{h3}</h3>
             <p className="text-black dark:text-neutral-200">{paragraph}</p>
             <div className="flex gap-2">
-                <i className={iClassName1}></i>
-                <i className={iClassName2}></i>
-                <i className={iClassName3}></i>
+                <i className={icon1}></i>
+                <i className={icon2}></i>
+                <i className={icon3}></i>
             </div>
             <div className="flex gap-2">
                 <a className="text-black hover:scale-[1.02] font-bold py-1 px-3 my-auto bg-[#dadada] rounded-lg" href={repo} target="_blank">
