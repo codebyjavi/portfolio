@@ -7,15 +7,13 @@ import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className={`bg-white dark:bg-slate-900 min-h-screen`}>
-      <div className={`w-full max-w-[800px] mx-auto`}>
+    <main className={`max-w-4xl mx-auto`}>
         <Header/>
         <Hero/>
         <Projects/>
         <Social/>
         <Footer/>
-      </div>
-    </div>
+    </main>
   );
 }
 

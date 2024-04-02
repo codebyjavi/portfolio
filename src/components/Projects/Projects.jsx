@@ -1,7 +1,4 @@
-import React from 'react'
-import ecommercePhoto from "../../images/ecommerce.png"
-import reactEcommerce from "../../images/react-ecommerce.png"
-import guitarLA from "../../images/guitarLA.png"
+import { images } from '../../images/images'
 import ProjectCard from './ProjectCard'
 import LargeProjectCard from './LargeProjectCard'
 
@@ -13,12 +10,12 @@ function Proyectos() {
       <div className="flex flex-col gap-20 mb-20">
     
         <LargeProjectCard
-          live="https://ecommerce-react-javxdev.netlify.app/"
-          repo="https://github.com/javxdev/ecommerce-react"
-          srcImg={reactEcommerce}
-          icon1="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
-          icon2="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
-          icon3="fa-brands fa-js text-[#FFD747] text-lg md:text-xl"
+          live="https://ecommerce-with-ts-javi.netlify.app/"
+          repo="https://github.com/javxdev/ecommerce-with-ts"
+          srcImg={images.ecommerce}
+          icon1="bx bxl-typescript text-[#3178C6] text-lg md:text-xl"
+          icon2="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
+          icon3="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
           h3="Ecommerce"
           paragraph="Obtiene los productos de una API, posee distintas secciones, local storage, custom hooks, carrito de compras y más!"
         />
@@ -26,23 +23,23 @@ function Proyectos() {
         <LargeProjectCard
           live="https://guitar-react-javi.netlify.app/"
           repo="https://github.com/javxdev/guitar-react"
-          srcImg={guitarLA}
-          icon1="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
-          icon2="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
-          icon3="fa-brands fa-js text-[#FFD747] text-lg md:text-xl"
+          srcImg={images.guitarla}
+          icon1="bx bxl-typescript text-[#3178C6] text-lg md:text-xl"
+          icon2="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
+          icon3="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
           h3="GuitarLA"
           paragraph="Obtiene los productos de un array local, posee local storage, carrito de compras y más!"
         />
         
         <LargeProjectCard
-          live="https://ecommerceteam.netlify.app/"
-          repo="https://github.com/javier-it/proyecto-CODO"
-          srcImg={ecommercePhoto}
-          icon1="fa-brands fa-html5 text-[#FF8A00] text-lg md:text-xl"
-          icon2="fa-brands fa-css3-alt text-blue-500 text-lg md:text-xl"
-          icon3="fa-brands fa-js text-[#FFD747] text-lg md:text-xl"
-          h3="Ecommerce con JavaScript"
-          paragraph="Obtiene los productos de una API, posee distintas secciones y carrito de compras."
+          live="https://local-de-comidas-ts.netlify.app/"
+          repo="https://github.com/javxdev/local-de-comidas"
+          srcImg={images.localDeComidas}
+          icon1="bx bxl-typescript text-[#3178C6] text-lg md:text-xl"
+          icon2="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
+          icon3="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
+          h3="Local de comidas"
+          paragraph="Obtiene los productos de un array local, posee propinas y más!"
           />
 
       </div>

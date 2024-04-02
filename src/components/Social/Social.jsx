@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Social() {
   return (
     <section className="flex-col items-center px-3 md:px-0 mb-10 md:mb-20">
