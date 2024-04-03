@@ -13,9 +13,9 @@ function LargeProjectCard({live, repo, srcImg, icon1, icon2, icon3, h3, paragrap
                 <i className={icon2}></i>
                 <i className={icon3}></i>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-x-3">
                 
-                <a className="text-black hover:scale-[1.02] font-bold py-2 px-4 my-auto bg-neutral-300 hover:bg-neutral-200 rounded-lg "
+                <a className="text-black font-bold py-2 px-4 my-auto bg-neutral-300 hover:bg-neutral-200 rounded-lg "
                     href={repo}
                     target="_blank"
                 >

@@ -1,4 +1,5 @@
 import { images } from '../../images/images'
+import { icons } from './icons'
 import ProjectCard from './ProjectCard'
 import LargeProjectCard from './LargeProjectCard'
 
@@ -13,9 +14,9 @@ function Proyectos() {
           live="https://ecommerce-with-ts-javi.netlify.app/"
           repo="https://github.com/javxdev/ecommerce-with-ts"
           srcImg={images.ecommerce}
-          icon1="bx bxl-typescript text-[#3178C6] text-lg md:text-xl"
-          icon2="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
-          icon3="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
+          icon1={icons.typeScript}
+          icon2={icons.tailwind}
+          icon3={icons.react}
           h3="Ecommerce"
           paragraph="Obtiene los productos de una API, posee distintas secciones, local storage, custom hooks, carrito de compras y más!"
         />
@@ -24,9 +25,9 @@ function Proyectos() {
           live="https://guitar-react-javi.netlify.app/"
           repo="https://github.com/javxdev/guitar-react"
           srcImg={images.guitarla}
-          icon1="bx bxl-typescript text-[#3178C6] text-lg md:text-xl"
-          icon2="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
-          icon3="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
+          icon1={icons.typeScript}
+          icon2={icons.tailwind}
+          icon3={icons.react}
           h3="GuitarLA"
           paragraph="Obtiene los productos de un array local, posee local storage, carrito de compras y más!"
         />
@@ -35,9 +36,9 @@ function Proyectos() {
           live="https://local-de-comidas-ts.netlify.app/"
           repo="https://github.com/javxdev/local-de-comidas"
           srcImg={images.localDeComidas}
-          icon1="bx bxl-typescript text-[#3178C6] text-lg md:text-xl"
-          icon2="bx bxl-tailwind-css text-[#19B5B9] text-lg md:text-xl"
-          icon3="fa-brands fa-react text-[#64C7FF] text-lg md:text-xl"
+          icon1={icons.typeScript}
+          icon2={icons.tailwind}
+          icon3={icons.react}
           h3="Local de comidas"
           paragraph="Obtiene los productos de un array local, posee propinas y más!"
           />

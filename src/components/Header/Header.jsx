@@ -16,12 +16,14 @@ function Header() {
   }, [theme]);
 
   function handleTheme() {
-      setTheme(theme => (theme === "light" ? "dark" : "light"));
+      setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"));
   }
 
   return (
     <div className="sticky top-0 flex justify-end py-2 items-center md:py-5 bg-white/80 dark:bg-slate-900/80">
-      <button onClick={handleTheme} className="flex justify-center items-center p-3 bg-transparent text-4xl pointer">
+      <button 
+        className="flex justify-center items-center p-3 bg-transparent text-4xl pointer"
+        onClick={handleTheme}>
             {theme === "light" ? (
                 <i className="bx bx-moon text-black"></i>
             ) : (
