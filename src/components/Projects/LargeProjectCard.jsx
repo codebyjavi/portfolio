@@ -1,4 +1,4 @@
-function LargeProjectCard({live, repo, srcImg, icon1, icon2, icon3, h3, paragraph}){
+export default function LargeProjectCard({live, repo, srcImg, icon1, icon2, icon3, h3, paragraph}){
 
   return (
     <div className="grid md:grid-cols-2 gap-4 text-white">
@@ -36,5 +36,3 @@ function LargeProjectCard({live, repo, srcImg, icon1, icon2, icon3, h3, paragrap
     </div>
   )
 }
-
-export default LargeProjectCard

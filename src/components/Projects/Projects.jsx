@@ -3,7 +3,7 @@ import { icons } from './icons'
 import ProjectCard from './ProjectCard'
 import LargeProjectCard from './LargeProjectCard'
 
-function Proyectos() {
+export default function Proyectos() {
 
   return (
     <article className="mb-10 md:mb-20 px-3 md:px-0">
@@ -62,5 +62,3 @@ function Proyectos() {
     </article>
   )
 }
-
-export default Proyectos

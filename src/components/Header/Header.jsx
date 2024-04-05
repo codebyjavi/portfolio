@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-function Header() {
+export default function Header() {
   const [theme, setTheme] = useState(() => {
     const storedTheme = localStorage.getItem('theme');
     return storedTheme ? storedTheme : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
@@ -33,5 +33,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header

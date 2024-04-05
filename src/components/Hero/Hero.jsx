@@ -2,7 +2,7 @@ import { images } from '../../images/images';
 import CV_Javier_Gonzalez_PDF from './CV_Javier_González.pdf';
 
 
-function Hero() {
+export default function Hero() {
   const downloadPDF = () => {
     const link = document.createElement('a');
     link.href = CV_Javier_Gonzalez_PDF;
@@ -31,5 +31,3 @@ function Hero() {
     </div>
   )
 }
-
-export default Hero

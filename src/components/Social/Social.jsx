@@ -1,4 +1,4 @@
-function Social() {
+export default function Social() {
   return (
     <section className="flex-col items-center px-3 md:px-0 mb-10 md:mb-20">
       
@@ -29,5 +29,3 @@ function Social() {
     </section>
   )
 }
-
-export default Social

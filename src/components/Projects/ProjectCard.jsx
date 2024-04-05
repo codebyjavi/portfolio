@@ -1,6 +1,6 @@
 import { icons } from "./icons"
 
-function ProjectCard({live, h3, text}) {
+export default function ProjectCard({live, h3, text}) {
 
   return (
     <a href={live} target="_blank" className="flex flex-col relative gap-1 py-2 px-6 border-2  border-neutral-300 rounded-lg hover:border-neutral-400 hover:scale-[1.02] dark:border-neutral-600 dark:hover:border-neutral-500">
@@ -16,5 +16,3 @@ function ProjectCard({live, h3, text}) {
         </a>
   )
 }
-
-export default ProjectCard

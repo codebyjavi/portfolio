@@ -1,4 +1,4 @@
-function Footer() {
+export default function Footer() {
   return (
     <footer className="text-yellow-500 pb-10 px-3 md:px-0 md:pb-32">
       <h3 className="text-2xl md:text-3xl  font-bold">Email <i className="fa-solid fa-envelope mb-5"></i></h3>
@@ -13,5 +13,3 @@ function Footer() {
   </footer>
   )
 }
-
-export default Footer
