@@ -12,7 +12,7 @@ export default function Proyectos() {
     
         <LargeProjectCard
           live="https://ecommerce-with-ts-javi.netlify.app/"
-          repo="https://github.com/javxdev/ecommerce-with-ts"
+          repo="https://github.com/codebyjavi/ecommerce-with-ts"
           srcImg={images.ecommerce}
           icon1={icons.typeScript}
           icon2={icons.tailwind}
@@ -23,7 +23,7 @@ export default function Proyectos() {
 
         <LargeProjectCard
           live="https://guitar-react-javi.netlify.app/"
-          repo="https://github.com/javxdev/guitar-react"
+          repo="https://github.com/codebyjavi/guitar-react"
           srcImg={images.guitarla}
           icon1={icons.typeScript}
           icon2={icons.tailwind}
@@ -34,7 +34,7 @@ export default function Proyectos() {
         
         <LargeProjectCard
           live="https://local-de-comidas-ts.netlify.app/"
-          repo="https://github.com/javxdev/local-de-comidas"
+          repo="https://github.com/codebyjavi/local-de-comidas"
           srcImg={images.localDeComidas}
           icon1={icons.typeScript}
           icon2={icons.tailwind}
