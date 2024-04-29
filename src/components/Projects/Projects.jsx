@@ -18,18 +18,9 @@ export default function Proyectos() {
           icon2={icons.tailwind}
           icon3={icons.react}
           h3="Ecommerce"
-          paragraph="Obtiene los productos de una API, posee distintas secciones, local storage, custom hooks, carrito de compras y más!"
-        />
-
-        <LargeProjectCard
-          live="https://guitar-react-javi.netlify.app/"
-          repo="https://github.com/codebyjavi/guitar-react"
-          srcImg={images.guitarla}
-          icon1={icons.typeScript}
-          icon2={icons.tailwind}
-          icon3={icons.react}
-          h3="GuitarLA"
-          paragraph="Obtiene los productos de un array local, posee local storage, carrito de compras y más!"
+          paragraph="Consulta una API de 20 productos los cuales son listados en pantalla con una interfaz amigable, 
+            diseño responsive y accesible. Posee carrito de compras con los productos seleccionados, el precio de cada 
+            uno y el total, posee local storage y mucho más."
         />
         
         <LargeProjectCard
@@ -40,21 +31,37 @@ export default function Proyectos() {
           icon2={icons.tailwind}
           icon3={icons.react}
           h3="Local de comidas"
-          paragraph="Obtiene los productos de un array local, posee propinas y más!"
+          paragraph=" Consulta una BD local y se hace una muestra de sus productos a través de un menú de compras. 
+            El usuario debe seleccionar su pedido el cual será mostrado con su respectivo precio. Cuenta con propinas, 
+            subtotal y total. Interfaz amigable, diseño responsive y accesible."
           />
 
+        <LargeProjectCard
+          live="https://guitar-react-javi.netlify.app/"
+          repo="https://github.com/codebyjavi/guitar-react"
+          srcImg={images.guitarla}
+          icon1={icons.typeScript}
+          icon2={icons.tailwind}
+          icon3={icons.react}
+          h3="GuitarLA"
+          paragraph="Cada guitarra posee imagen, precio, nombre y descripción.
+            Cuenta con carrito de compras, interfaz amigable, diseño responsive y accesible."
+        />
+        
       </div>
       <div className="grid md:grid-cols-2 gap-4">
         
         <ProjectCard
           live="https://weather-app-javi.netlify.app/"
           h3="Weather app"
-          text="Consulta una API y muestra el clima en tiempo real."
+          text="Consulta una API y muestra el clima en tiempo real.
+            Interfaz amigable, diseño responsive y accesible."
         />  
         <ProjectCard
           live="https://tasks-app-javi.netlify.app/"
           h3="Tasks app"
-          text="Permite cargar, tachar y eliminar tareas."
+          text="Permite cargar, tachar y eliminar tareas.
+            Interfaz amigable, diseño responsive y accesible. "
         />
         
       </div>
