@@ -1,5 +1,5 @@
 import { images } from '../../images/images';
-import CV_Javier_Gonzalez_PDF from './CV_Javier_González.pdf';
+import CV_Javier_Gonzalez_PDF from './CV_-_Javier_González.pdf';
 
 
 export default function Hero() {
